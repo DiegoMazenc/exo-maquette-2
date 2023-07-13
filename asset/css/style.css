@@ -4,7 +4,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h2{
+h2 {
     text-align: center;
     font-weight: 800;
     font-size: 30px;
@@ -27,12 +27,12 @@ h3 {
 }
 
 .topheader {
-
     display: flex;
     justify-content: space-between;
     margin: 0 7%;
     padding-top: 100px;
     align-items: center;
+
 }
 
 .logo {
@@ -43,7 +43,7 @@ h3 {
 .imglogo {
     width: 60px;
     height: 60px;
-    background-color:#0051dd;
+    background-color: #0051dd;
     border-radius: 50%;
     margin-right: 20px;
 }
@@ -59,8 +59,8 @@ h3 {
     align-items: center;
 }
 
-@media screen and (max-width:800px){
-    .imglogo{
+@media screen and (max-width:800px) {
+    .imglogo {
         background-color: white;
     }
 }
@@ -73,14 +73,22 @@ h3 {
 
 }
 
+.action {
+    transform: rotate(90deg)
+}
+
 nav {
     position: absolute;
     right: -400px;
-    transition: 0.5s ease 0.5s;
+    transition: 0.5s ease;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .menu:hover nav {
-    right: 110px;
+    right: 10%;
+    opacity: 1;
 
 }
 
@@ -88,13 +96,16 @@ nav a {
 
     color: white;
     text-decoration: none;
+    border-radius: 15px;
     padding: 15px 40px;
+    transition: 0.3s;
 }
 
-.action {
-    transition: 0.5s;
-
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.151);
 }
+
+
 
 .menuburger {
     display: block;
@@ -105,19 +116,53 @@ nav a {
 
 .menuaction {
     position: absolute;
-    transition: 0.5s 0.5s;
+    transition: 0.5s ease;
 }
 
-.menu:hover .action {
-    transform: rotate(90deg);
-}
 
 .menu:hover .menuaction {
-    position: absolute;
+
     padding-top: 440px;
 }
 
+@media screen and (max-width:800px) {
 
+    .menu{
+        margin-right: 3%;
+    }
+    .action {
+        transform: rotate(0deg);
+        /* margin-top: -20px; */
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    nav a{
+        text-align: left;
+    }
+
+    .menuaction {
+        position: relative;
+        transition: 0.5s ease;
+    }
+    
+    
+    .menu:hover .menuaction {
+    
+        padding-top: 160px;
+    }
+
+    .menu:hover nav {
+        right: 3%;
+        opacity: 1;
+    
+    }
+
+}
 
 
 /* =====HEADER CONTAIN===== */
@@ -554,16 +599,16 @@ iframe {
 @media screen and (max-width:800px) {
     .article9 {
         margin: 15%;
-        padding-top: 15px ;
-        padding-bottom: 10px ;
+        padding-top: 15px;
+        padding-bottom: 10px;
     }
 
-    .article9 h3{
-        margin:0;
+    .article9 h3 {
+        margin: 0;
         font-size: 16px;
     }
 
-    .article9 .articleform{
+    .article9 .articleform {
         margin-top: 15px;
     }
 

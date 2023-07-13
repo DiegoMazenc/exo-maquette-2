@@ -1,0 +1,62 @@
+
+.menu {
+    display: flex;
+    align-items: center;
+
+}
+
+.action {
+    transition: all 0.5s ease;
+
+}
+
+.action.hover-in {
+    /* Styles lors de l'entrée du hover */
+    transition-duration: 0s; /* Transition instantanée à l'entrée */
+  }
+  
+  .action.hover-out {
+    /* Styles lors de la sortie du hover */
+    transition-delay: 0.5s; /* Délai de transition de 0,5 seconde à la sortie */
+  }
+
+nav {
+    position: absolute;
+    right: -400px;
+    transition: 0.5s ease 0.5s ;
+}
+
+.menu:hover nav {
+    right: 10%;
+
+}
+
+nav a {
+
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+}
+
+
+
+.menuburger {
+    display: block;
+    padding: 5px;
+    width: 30px;
+    height: auto;
+}
+
+.menuaction {
+    position: absolute;
+    transition: 0.5s ease 0.5s ;
+}
+
+.menu:hover .action {
+    transform: rotate(90deg);
+}
+
+.menu:hover .menuaction {
+    position: absolute;
+    padding-top: 440px;
+}

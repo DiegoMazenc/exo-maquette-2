@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exo-Maquette-2</title>
-
     <link rel="stylesheet" href="asset/css/style.css">
+
 
 </head>
 
@@ -105,13 +105,25 @@
                 <div class="article4under1">
                     <h3>LOREM IPSUM</h3>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus itaque quod est eum culpa amet, iusto quaerat ea incidunt voluptatibus, laudantium distinctio nulla labore cum repellat nostrum. Modi placeat suscipit obcaecati quas velit sed dolores eveniet explicabo, excepturi quo sunt rerum<br><br> Voluptatibus delectus ipsa hic facilis perspiciatis facere iure consequuntur iusto saepe voluptas, ut placeat a sapiente tempore voluptatum? Accusantium fugiat quiasoluta, <br><br>sequi excepturi explicabo natus! nobis, provident expedita impedit libero, fugit earum eos cum? Soluta, molestiae sunt!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus itaque quod est eum culpa
+                        amet, iusto quaerat ea incidunt voluptatibus, laudantium distinctio nulla labore cum repellat
+                        nostrum. Modi placeat suscipit obcaecati quas velit sed dolores eveniet explicabo, excepturi quo
+                        sunt rerum<br><br> Voluptatibus delectus ipsa hic facilis perspiciatis facere iure consequuntur
+                        iusto saepe voluptas, ut placeat a sapiente tempore voluptatum? Accusantium fugiat quiasoluta,
+                        <br><br>sequi excepturi explicabo natus! nobis, provident expedita impedit libero, fugit earum
+                        eos cum? Soluta, molestiae sunt!
                     </p>
                 </div>
                 <div class="article4under2">
                     <h3>LOREM IPSUM</h3>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus itaque quod est eum culpa amet, iusto quaerat ea incidunt voluptatibus, laudantium distinctio nulla labore cum repellat nostrum. Modi placeat suscipit obcaecati quas velit sed dolores eveniet explicabo, excepturi quo sunt rerum<br><br> Voluptatibus delectus ipsa hic facilis perspiciatis facere iure consequuntur iusto saepe voluptas, ut placeat a sapiente tempore voluptatum? Accusantium fugiat quiasoluta, <br><br>sequi excepturi explicabo natus! nobis, provident expedita impedit libero, fugit earum eos cum? Soluta, molestiae sunt!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus itaque quod est eum culpa
+                        amet, iusto quaerat ea incidunt voluptatibus, laudantium distinctio nulla labore cum repellat
+                        nostrum. Modi placeat suscipit obcaecati quas velit sed dolores eveniet explicabo, excepturi quo
+                        sunt rerum<br><br> Voluptatibus delectus ipsa hic facilis perspiciatis facere iure consequuntur
+                        iusto saepe voluptas, ut placeat a sapiente tempore voluptatum? Accusantium fugiat quiasoluta,
+                        <br><br>sequi excepturi explicabo natus! nobis, provident expedita impedit libero, fugit earum
+                        eos cum? Soluta, molestiae sunt!
                     </p>
                 </div>
 
@@ -237,12 +249,27 @@
                 </article>
                 <div class="footerconditionmob">
                     <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptates aut nemo sed reprehenderit tempore facilis nihil nam, deleniti ipsa cupiditate!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptates aut nemo sed
+                        reprehenderit tempore facilis nihil nam, deleniti ipsa cupiditate!</p>
                 </div>
 
             </div>
         </div>
     </footer>
+    <script>
+        var hoverElement = document.getElementById('action');
+
+        hoverElement.addEventListener('mouseenter', function () {
+            hoverElement.classList.add('hover-in');
+        });
+
+        hoverElement.addEventListener('mouseleave', function () {
+            setTimeout(function () {
+                hoverElement.classList.remove('hover-in');
+                hoverElement.classList.add('hover-out');
+            }, 500); // Délai de 0,5 seconde avant d'activer le hover à la sortie
+        });
+    </script>
 </body>
 
 </html>
